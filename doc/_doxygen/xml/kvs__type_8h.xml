@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="kvs__type_8h" kind="file" language="C++">
+    <compoundname>kvs_type.h</compoundname>
+    <includes local="no">fstream</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">vector</includes>
+    <includes local="yes">cereal/archives/binary.hpp</includes>
+    <includes local="yes">cereal/types/base_class.hpp</includes>
+    <includes local="yes">cereal/types/string.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/include/kvs_type.h</label>
+        <link refid="kvs__type_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cereal/archives/binary.hpp</label>
+      </node>
+      <node id="9">
+        <label>cereal/types/string.hpp</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="2">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="5">
+        <label>utility</label>
+      </node>
+      <node id="8">
+        <label>cereal/types/base_class.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classCerealDataType" prot="public">CerealDataType</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="kvs__type_8h_1aff4fca35f67b1dfe76e59836d612a15b" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>TYPE_INDEX</name>
+        <enumvalue id="kvs__type_8h_1aff4fca35f67b1dfe76e59836d612a15ba7e9e133c26cbf12ce5c602553fa7a968" prot="public">
+          <name>INT8_T_KVS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="kvs__type_8h_1aff4fca35f67b1dfe76e59836d612a15ba5f4c3d0300edf990db1180bcb49d5498" prot="public">
+          <name>INT16_T_KVS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="kvs__type_8h_1aff4fca35f67b1dfe76e59836d612a15bac7bb56ac70a1987c0749198a5c3043fe" prot="public">
+          <name>INT32_T_KVS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="kvs__type_8h_1aff4fca35f67b1dfe76e59836d612a15ba81f58b295b59187e2ee19d443f16705c" prot="public">
+          <name>INT64_T_KVS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="kvs__type_8h_1aff4fca35f67b1dfe76e59836d612a15ba22e64d9f831b0ab99700eacad419098a" prot="public">
+          <name>UINT8_T_KVS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="kvs__type_8h_1aff4fca35f67b1dfe76e59836d612a15ba4508c4ddf7183fcbdae2afefac64e654" prot="public">
+          <name>UINT16_T_KVS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="kvs__type_8h_1aff4fca35f67b1dfe76e59836d612a15baa1970329e2859877c770ef06a31e97fc" prot="public">
+          <name>UINT32_T_KVS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="kvs__type_8h_1aff4fca35f67b1dfe76e59836d612a15ba298869939fac477b0b194597f98f9e56" prot="public">
+          <name>UINT64_T_KVS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="kvs__type_8h_1aff4fca35f67b1dfe76e59836d612a15ba3650ea8ee68e431aef19894aad52a8ff" prot="public">
+          <name>STRING_T_KVS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="kvs__type_8h_1aff4fca35f67b1dfe76e59836d612a15ba3316e61701f4293e80cd11fb180a0a55" prot="public">
+          <name>BOOL_T_KVS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="kvs__type_8h_1aff4fca35f67b1dfe76e59836d612a15ba5ca5ac30e2e772cf306ee969781eaae7" prot="public">
+          <name>FLOAT_T_KVS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="kvs__type_8h_1aff4fca35f67b1dfe76e59836d612a15ba467e07f77d7d9e8b6b8da4a76fabdc1f" prot="public">
+          <name>DOUBLE_T_KVS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/kvs_type.h" line="18" column="22" bodyfile="src/include/kvs_type.h" bodystart="18" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="kvs__type_8h_1a2d236f84151beda136cc97bce5a7ef8a" prot="public" static="no" mutable="no">
+        <type>const std::map&lt; std::string, TYPE_INDEX &gt;</type>
+        <definition>const std::map&lt;std::string, TYPE_INDEX&gt; kvs_type_table</definition>
+        <argsstring></argsstring>
+        <name>kvs_type_table</name>
+        <initializer>= {
+    {std::type_index(typeid(int8_t)).name(), TYPE_INDEX::INT8_T_KVS},
+    {std::type_index(typeid(int16_t)).name(), TYPE_INDEX::INT16_T_KVS},
+    {std::type_index(typeid(int32_t)).name(), TYPE_INDEX::INT32_T_KVS},
+    {std::type_index(typeid(int64_t)).name(), TYPE_INDEX::INT64_T_KVS},
+    {std::type_index(typeid(uint8_t)).name(), TYPE_INDEX::UINT8_T_KVS},
+    {std::type_index(typeid(uint16_t)).name(), TYPE_INDEX::UINT16_T_KVS},
+    {std::type_index(typeid(uint32_t)).name(), TYPE_INDEX::UINT32_T_KVS},
+    {std::type_index(typeid(uint64_t)).name(), TYPE_INDEX::UINT64_T_KVS},
+    {std::type_index(typeid(std::string)).name(), TYPE_INDEX::STRING_T_KVS},
+    {std::type_index(typeid(bool)).name(), TYPE_INDEX::BOOL_T_KVS},
+    {std::type_index(typeid(float)).name(), TYPE_INDEX::FLOAT_T_KVS},
+    {std::type_index(typeid(double)).name(), TYPE_INDEX::DOUBLE_T_KVS}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/kvs_type.h" line="33" column="16" bodyfile="src/include/kvs_type.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="kvs__type_8h_1a94a4e36d676d43245feef2027e7eb79a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; std::byte &gt;</type>
+        <definition>std::vector&lt;std::byte&gt; SeriCerealData</definition>
+        <argsstring>(T origin_data)</argsstring>
+        <name>SeriCerealData</name>
+        <param>
+          <type>T</type>
+          <declname>origin_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/kvs_type.h" line="64" column="13" bodyfile="src/include/kvs_type.h" bodystart="64" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="kvs__type_8h_1a9387eb18ec975d8ca0b63c246bf5f6b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T DeseriCerealData</definition>
+        <argsstring>(const std::vector&lt; std::byte &gt; seri_data)</argsstring>
+        <name>DeseriCerealData</name>
+        <param>
+          <type>const std::vector&lt; std::byte &gt;</type>
+          <declname>seri_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/kvs_type.h" line="85" column="3" bodyfile="src/include/kvs_type.h" bodystart="85" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Horizon<sp/>Robotics,<sp/>Inc.<sp/>-<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Unauthorized<sp/>copying<sp/>of<sp/>this<sp/>file,<sp/>via<sp/>any<sp/>medium<sp/>is<sp/>strictly<sp/>prohibited</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Proprietary<sp/>and<sp/>confidential</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cereal/archives/binary.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cereal/types/base_class.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cereal/types/string.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>TYPE_INDEX<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>INT8_T_KVS<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>INT16_T_KVS,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>INT32_T_KVS,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>INT64_T_KVS,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>UINT8_T_KVS,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>UINT16_T_KVS,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>UINT32_T_KVS,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>UINT64_T_KVS,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>STRING_T_KVS,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>BOOL_T_KVS,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>FLOAT_T_KVS,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>DOUBLE_T_KVS</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>TYPE_INDEX&gt;<sp/>kvs_type_table<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{std::type_index(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(int8_t)).name(),<sp/>TYPE_INDEX::INT8_T_KVS},</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{std::type_index(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(int16_t)).name(),<sp/>TYPE_INDEX::INT16_T_KVS},</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{std::type_index(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(int32_t)).name(),<sp/>TYPE_INDEX::INT32_T_KVS},</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{std::type_index(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(int64_t)).name(),<sp/>TYPE_INDEX::INT64_T_KVS},</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{std::type_index(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(uint8_t)).name(),<sp/>TYPE_INDEX::UINT8_T_KVS},</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{std::type_index(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(uint16_t)).name(),<sp/>TYPE_INDEX::UINT16_T_KVS},</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{std::type_index(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(uint32_t)).name(),<sp/>TYPE_INDEX::UINT32_T_KVS},</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{std::type_index(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(uint64_t)).name(),<sp/>TYPE_INDEX::UINT64_T_KVS},</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{std::type_index(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(std::string)).name(),<sp/>TYPE_INDEX::STRING_T_KVS},</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{std::type_index(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)).name(),<sp/>TYPE_INDEX::BOOL_T_KVS},</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{std::type_index(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)).name(),<sp/>TYPE_INDEX::FLOAT_T_KVS},</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{std::type_index(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)).name(),<sp/>TYPE_INDEX::DOUBLE_T_KVS}};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="48" refid="classCerealDataType" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCerealDataType" kindref="compound">CerealDataType</ref><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="classCerealDataType" kindref="compound">CerealDataType</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCerealDataType" kindref="compound">CerealDataType</ref>(T<sp/>data)<sp/>:<sp/>data_(data)<sp/>{}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>T<sp/>data_;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Archive&gt;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(Archive<sp/>&amp;ar)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>ar(CEREAL_NVP(data_));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">cereal::access;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">std::vector&lt;std::byte&gt;<sp/>SeriCerealData(T<sp/>origin_data)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><ref refid="classCerealDataType" kindref="compound">CerealDataType&lt;T&gt;</ref><sp/>cereal_data(origin_data);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>std::string<sp/>strbuf;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>std::ostringstream<sp/>out0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>cereal::BinaryOutputArchive<sp/>seri_data(out0);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>seri_data(cereal_data);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>strbuf<sp/>=<sp/>out0.str();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>out0.clear();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>std::vector&lt;std::byte&gt;<sp/>seriData;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint32_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>strbuf.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>std::byte<sp/>tmp_byte{</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">std::byte</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(strbuf.at(i))};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>seriData.push_back(std::move(tmp_byte));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>seriData;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">T<sp/>DeseriCerealData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::byte&gt;<sp/>seri_data)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>std::stringstream<sp/>sstream;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;item<sp/>:<sp/>seri_data)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>sstream<sp/>&lt;&lt;<sp/>std::to_integer&lt;char&gt;(item);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>cereal::BinaryInputArchive<sp/>archive_in(sstream);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><ref refid="classCerealDataType" kindref="compound">CerealDataType&lt;T&gt;</ref><sp/>cereal_data;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>archive_in(cereal_data);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cereal_data.data_;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/include/kvs_type.h"/>
+  </compounddef>
+</doxygen>

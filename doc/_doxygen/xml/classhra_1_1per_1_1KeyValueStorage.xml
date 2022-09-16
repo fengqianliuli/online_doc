@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classhra_1_1per_1_1KeyValueStorage" kind="class" language="C++" prot="public">
+    <compoundname>hra::per::KeyValueStorage</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1af20b30772dfdfc3ec289b3a50f567754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hra::per::KeyValueStorage::KeyValueStorage</definition>
+        <argsstring>()=default</argsstring>
+        <name>KeyValueStorage</name>
+        <briefdescription>
+<para>Construct a new Key Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="23" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1a85ed4e6adacea76e34fc2105a1a6bd7c" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>hra::per::KeyValueStorage::KeyValueStorage</definition>
+        <argsstring>(KeyValueStorage &amp;&amp;) noexcept</argsstring>
+        <name>KeyValueStorage</name>
+        <param>
+          <type><ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Move constructor for <ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="30" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1abc37c631a4f61fe9f12909d10e001112" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref> &amp;</type>
+        <definition>KeyValueStorage&amp; hra::per::KeyValueStorage::operator=</definition>
+        <argsstring>(KeyValueStorage &amp;&amp;kvs) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref> &amp;&amp;</type>
+          <declname>kvs</declname>
+        </param>
+        <briefdescription>
+<para>Move assignment operator for <ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">kvs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="39" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1a8f394f92f3040385d3893c2fe2f8e7b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hra::per::KeyValueStorage::KeyValueStorage</definition>
+        <argsstring>(const KeyValueStorage &amp;)=delete</argsstring>
+        <name>KeyValueStorage</name>
+        <param>
+          <type>const <ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>The copy constructor for <ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref> shall not be used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="46" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1a429fc20fa3adca575817c6f4d77d4da6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref> &amp;</type>
+        <definition>KeyValueStorage&amp; hra::per::KeyValueStorage::operator=</definition>
+        <argsstring>(const KeyValueStorage &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>The copy assignment operator for <ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref> shall not be used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="54" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1ad6246a339816d7e313280140342b55dd" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="virtual">
+        <type></type>
+        <definition>virtual hra::per::KeyValueStorage::~KeyValueStorage</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>~KeyValueStorage</name>
+        <briefdescription>
+<para>Destroy the Key Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="59" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1acda209f731fecd6eb0c5a3205614cb00" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>hra::core::Result&lt; std::vector&lt; std::string &gt; &gt;</type>
+        <definition>virtual hra::core::Result&lt;std::vector&lt;std::string&gt; &gt; hra::per::KeyValueStorage::GetAllKeys</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetAllKeys</name>
+        <briefdescription>
+<para>Get the All Keys object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>hra::core::Result&lt;std::vector&lt;std::string&gt;&gt;</para>
+</simplesect>
+Returns a list of all currently available keys of this Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="67" column="29" bodyfile="include/key_value_storage.h" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1a595f184b62111ba0972e62290abc38ce" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>hra::core::Result&lt; bool &gt;</type>
+        <definition>virtual hra::core::Result&lt;bool&gt; hra::per::KeyValueStorage::KeyExists</definition>
+        <argsstring>(hra::core::StringView key) const noexcept</argsstring>
+        <name>KeyExists</name>
+        <param>
+          <type>hra::core::StringView</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Check key exists. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>hra::core::Result&lt;bool&gt;</para>
+</simplesect>
+Checks if a key exists in this Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="80" column="29" bodyfile="include/key_value_storage.h" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1a8219e7ea25ba2008da6c8a28ca032e61" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>hra::core::Result&lt; T &gt;</type>
+        <definition>hra::core::Result&lt;T&gt; hra::per::KeyValueStorage::GetValue</definition>
+        <argsstring>(hra::core::StringView key) const noexcept</argsstring>
+        <name>GetValue</name>
+        <param>
+          <type>hra::core::StringView</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Get the Value object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>hra::core::Result&lt;T&gt;</para>
+</simplesect>
+Returns the value assigned to a key of this Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="95" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1af3e96b751773f17814ed5467e817697c" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>hra::core::Result&lt;void&gt; hra::per::KeyValueStorage::SetValue</definition>
+        <argsstring>(hra::core::StringView key, const T &amp;value) noexcept</argsstring>
+        <name>SetValue</name>
+        <param>
+          <type>hra::core::StringView</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the Value object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>hra::core::Result&lt;void&gt;</para>
+</simplesect>
+If a value already exists and has the same data type as the new value, it is overwritten. If the new value has a different data type than the stored value, kDataTypeMismatch is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="109" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1ac393d1ac956f692fb1ae52a41e42d907" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>virtual hra::core::Result&lt;void&gt; hra::per::KeyValueStorage::RemoveKey</definition>
+        <argsstring>(hra::core::StringView key) noexcept</argsstring>
+        <name>RemoveKey</name>
+        <param>
+          <type>hra::core::StringView</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Remove Key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>hra::core::Result&lt;void&gt;</para>
+</simplesect>
+Removes a key and the associated value from this Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="120" column="29" bodyfile="include/key_value_storage.h" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1a6933806f5c9ffc15cdd8f0aaa9d321c1" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>virtual hra::core::Result&lt;void&gt; hra::per::KeyValueStorage::RemoveAllKeys</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>RemoveAllKeys</name>
+        <briefdescription>
+<para>Remove all keys. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>hra::core::Result&lt;void&gt;</para>
+</simplesect>
+Removes all keys and associated values from this Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="133" column="29" bodyfile="include/key_value_storage.h" bodystart="133" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1ad53aa9827a9c12bba49ac98aa7b849b9" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>virtual hra::core::Result&lt;void&gt; hra::per::KeyValueStorage::SyncToStorage</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>SyncToStorage</name>
+        <briefdescription>
+<para>Sync to storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>hra::core::Result&lt;void&gt;</para>
+</simplesect>
+Triggers flushing of changed key-value pairs of the Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> to the physical storage. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="144" column="29" bodyfile="include/key_value_storage.h" bodystart="144" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1ad2081a1201c4e65485173547620d8ad9" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>virtual hra::core::Result&lt;void&gt; hra::per::KeyValueStorage::DiscardPendingChanges</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>DiscardPendingChanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> @brief Discard pending changes
+ @return hra::core::Result&lt;void&gt;
+
+ @details Removes all pending changes to this Key-Value Storage since the
+</verbatim> last call to <ref refid="classhra_1_1per_1_1KeyValueStorage_1ad53aa9827a9c12bba49ac98aa7b849b9" kindref="member">SyncToStorage()</ref> or since this Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> was opened using OpenKeyValueStorage() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="156" column="29" bodyfile="include/key_value_storage.h" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1af5d29d7a0e313dd8f1b49da18ec3f4fe" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>virtual hra::core::Result&lt;void&gt; hra::per::KeyValueStorage::RecoverKey</definition>
+        <argsstring>(hra::core::StringView key) noexcept</argsstring>
+        <name>RecoverKey</name>
+        <param>
+          <type>hra::core::StringView</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="160" column="29" bodyfile="include/key_value_storage.h" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1af29ff2330558e8823658804790dec862" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>virtual hra::core::Result&lt;void&gt; hra::per::KeyValueStorage::ResetKey</definition>
+        <argsstring>(hra::core::StringView key) noexcept</argsstring>
+        <name>ResetKey</name>
+        <param>
+          <type>hra::core::StringView</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="165" column="29" bodyfile="include/key_value_storage.h" bodystart="165" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1a76f603889ee06237e3f3f0cf67c1d8cf" prot="protected" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>hra::core::Result&lt; std::vector&lt; std::byte &gt; &gt;</type>
+        <definition>virtual hra::core::Result&lt;std::vector&lt;std::byte&gt; &gt; hra::per::KeyValueStorage::FetchValueFromRamtable</definition>
+        <argsstring>(hra::core::StringView &amp;key, uint16_t &amp;kvs_type) const noexcept</argsstring>
+        <name>FetchValueFromRamtable</name>
+        <param>
+          <type>hra::core::StringView &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>uint16_t &amp;</type>
+          <declname>kvs_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="171" column="29" bodyfile="include/key_value_storage.h" bodystart="171" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1KeyValueStorage_1a559e8d137c923e5046e0316f2d3bf7b5" prot="protected" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>virtual hra::core::Result&lt;void&gt; hra::per::KeyValueStorage::SetValueToRamtable</definition>
+        <argsstring>(hra::core::StringView &amp;key, const std::vector&lt; std::byte &gt; &amp;value, uint16_t &amp;kvs_type) noexcept</argsstring>
+        <name>SetValueToRamtable</name>
+        <param>
+          <type>hra::core::StringView &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::byte &gt; &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>uint16_t &amp;</type>
+          <declname>kvs_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="178" column="29" bodyfile="include/key_value_storage.h" bodystart="178" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/key_value_storage.h" line="18" column="22" bodyfile="include/key_value_storage.h" bodystart="18" bodyend="186"/>
+    <listofallmembers>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1ad2081a1201c4e65485173547620d8ad9" prot="public" virt="virtual"><scope>hra::per::KeyValueStorage</scope><name>DiscardPendingChanges</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1a76f603889ee06237e3f3f0cf67c1d8cf" prot="protected" virt="virtual"><scope>hra::per::KeyValueStorage</scope><name>FetchValueFromRamtable</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1acda209f731fecd6eb0c5a3205614cb00" prot="public" virt="virtual"><scope>hra::per::KeyValueStorage</scope><name>GetAllKeys</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1a8219e7ea25ba2008da6c8a28ca032e61" prot="public" virt="non-virtual"><scope>hra::per::KeyValueStorage</scope><name>GetValue</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1a595f184b62111ba0972e62290abc38ce" prot="public" virt="virtual"><scope>hra::per::KeyValueStorage</scope><name>KeyExists</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1af20b30772dfdfc3ec289b3a50f567754" prot="public" virt="non-virtual"><scope>hra::per::KeyValueStorage</scope><name>KeyValueStorage</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1a85ed4e6adacea76e34fc2105a1a6bd7c" prot="public" virt="non-virtual"><scope>hra::per::KeyValueStorage</scope><name>KeyValueStorage</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1a8f394f92f3040385d3893c2fe2f8e7b5" prot="public" virt="non-virtual"><scope>hra::per::KeyValueStorage</scope><name>KeyValueStorage</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1abc37c631a4f61fe9f12909d10e001112" prot="public" virt="non-virtual"><scope>hra::per::KeyValueStorage</scope><name>operator=</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1a429fc20fa3adca575817c6f4d77d4da6" prot="public" virt="non-virtual"><scope>hra::per::KeyValueStorage</scope><name>operator=</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1af5d29d7a0e313dd8f1b49da18ec3f4fe" prot="public" virt="virtual"><scope>hra::per::KeyValueStorage</scope><name>RecoverKey</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1a6933806f5c9ffc15cdd8f0aaa9d321c1" prot="public" virt="virtual"><scope>hra::per::KeyValueStorage</scope><name>RemoveAllKeys</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1ac393d1ac956f692fb1ae52a41e42d907" prot="public" virt="virtual"><scope>hra::per::KeyValueStorage</scope><name>RemoveKey</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1af29ff2330558e8823658804790dec862" prot="public" virt="virtual"><scope>hra::per::KeyValueStorage</scope><name>ResetKey</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1af3e96b751773f17814ed5467e817697c" prot="public" virt="non-virtual"><scope>hra::per::KeyValueStorage</scope><name>SetValue</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1a559e8d137c923e5046e0316f2d3bf7b5" prot="protected" virt="virtual"><scope>hra::per::KeyValueStorage</scope><name>SetValueToRamtable</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1ad53aa9827a9c12bba49ac98aa7b849b9" prot="public" virt="virtual"><scope>hra::per::KeyValueStorage</scope><name>SyncToStorage</name></member>
+      <member refid="classhra_1_1per_1_1KeyValueStorage_1ad6246a339816d7e313280140342b55dd" prot="public" virt="virtual"><scope>hra::per::KeyValueStorage</scope><name>~KeyValueStorage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

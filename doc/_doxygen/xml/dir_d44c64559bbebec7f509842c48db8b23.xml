@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerfile refid="file__storage_8h">file_storage.h</innerfile>
+    <innerfile refid="key__value__storage_8h">key_value_storage.h</innerfile>
+    <innerfile refid="per__error__domain_8h">per_error_domain.h</innerfile>
+    <innerfile refid="persistency_8h">persistency.h</innerfile>
+    <innerfile refid="read__accessor_8h">read_accessor.h</innerfile>
+    <innerfile refid="read__write__accessor_8h">read_write_accessor.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/"/>
+  </compounddef>
+</doxygen>

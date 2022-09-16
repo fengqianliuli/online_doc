@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classhra_1_1per_1_1ReadAccessor" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>hra::per::ReadAccessor</compoundname>
+    <derivedcompoundref refid="classhra_1_1per_1_1ReadWriteAccessor" prot="public" virt="non-virtual">hra::per::ReadWriteAccessor</derivedcompoundref>
+    <includes refid="read__accessor_8h" local="no">read_accessor.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classhra_1_1per_1_1ReadAccessor_1a31deb08a775372552b215691be995b47" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>Origin</name>
+        <enumvalue id="classhra_1_1per_1_1ReadAccessor_1a31deb08a775372552b215691be995b47ab4a651e47aec9e7a3db91ad75c9e3556" prot="public">
+          <name>kBeginning</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Seek from the beginning. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classhra_1_1per_1_1ReadAccessor_1a31deb08a775372552b215691be995b47aa1f14acc9c84a430477914441ad13a97" prot="public">
+          <name>kCurrent</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Seek from the current position. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classhra_1_1per_1_1ReadAccessor_1a31deb08a775372552b215691be995b47a374bf9ba57a441a600d65b212cf9d13c" prot="public">
+          <name>kEnd</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Seek from the end. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Specification of seek origin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="33" column="20" bodyfile="include/read_accessor.h" bodystart="33" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="enum" id="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666c" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>OpenMode</name>
+        <enumvalue id="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666ca22474a321748e3beef629bf60ee291c7" prot="public">
+          <name>kAtTheBeginning</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>Sets the seek pointer to the beginning of the file when thefile is opened. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666ca599815f27e6fd49f5df3dca143303fb2" prot="public">
+          <name>kAtTheEnd</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>Sets the seek pointer to the end of the file when thefile is opened. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666ca6393f5467404a20b7754c5032eb69bfd" prot="public">
+          <name>kTruncate</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>Deletes existing content when the file is opened. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666caed5658e329d7469d2f08b7362619ffef" prot="public">
+          <name>kAppend</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>Append to the end. Always seeks to the end of the file before writing. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666ca3c8cbd89acf49a4b20aded693e13ae86" prot="public">
+          <name>kText</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>Opens the file as text. The encoding is specified during design time for the whole file storage by PersistencyFileProxyInterface.encoding. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666ca212f9f34e4e151a9ba569c71e1aace47" prot="public">
+          <name>kBinary</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+<para>Opens the file as binary. If not set, the file will be opened as configured by PersistencyFileProxyInterface.category or, if that is not configured, as text. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>How the file shall be opened. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="54" column="22" bodyfile="include/read_accessor.h" bodystart="54" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhra_1_1per_1_1ReadAccessor_1a6bd9a953b29c29af1c09617ffdfb8a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual hra::per::ReadAccessor::~ReadAccessor</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ReadAccessor</name>
+        <briefdescription>
+<para>Destructor for <ref refid="classhra_1_1per_1_1ReadAccessor" kindref="compound">ReadAccessor</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="28" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1ReadAccessor_1a0fdca65cc75dcc4fdb98cac92962a529" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>hra::core::Result&lt; char &gt;</type>
+        <definition>virtual hra::core::Result&lt;char&gt; hra::per::ReadAccessor::Peek</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>Peek</name>
+        <briefdescription>
+<para>Returns the character at the current position in the file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A Result, containing either character at the current position or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="99" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1ReadAccessor_1a3857929f157ab042e61f0b83fc898655" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>hra::core::Result&lt; char &gt;</type>
+        <definition>virtual hra::core::Result&lt;char&gt; hra::per::ReadAccessor::Get</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>Get</name>
+        <briefdescription>
+<para>Returns the character at the current position in the file,advancing the current position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A Result, containing either character at the current position or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="108" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1ReadAccessor_1a041ed9f43c18f05ff26b92d463bc867d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>hra::core::Result&lt; std::string &gt;</type>
+        <definition>virtual hra::core::Result&lt;std::string&gt; hra::per::ReadAccessor::ReadText</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>ReadText</name>
+        <briefdescription>
+<para>Read characters from current positon to the end of the file into a string, advancing the current position. Returns the actual number of characters that were read. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A Result, containing either charactes that have been read or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="118" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1ReadAccessor_1ad009c74c04831294c9e7c4684682d672" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>hra::core::Result&lt; std::string &gt;</type>
+        <definition>virtual hra::core::Result&lt;std::string&gt; hra::per::ReadAccessor::ReadText</definition>
+        <argsstring>(uint64_t n) noexcept=0</argsstring>
+        <name>ReadText</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Reads a number of characters into a string, advancing the current position. Returns the actual number of characters that were read. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of characters to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Result, containing either charactes that have been read or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="128" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1ReadAccessor_1a39d277ec4f016ab139d01fdcf792d6e3" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>hra::core::Result&lt; std::vector&lt; char &gt; &gt;</type>
+        <definition>virtual hra::core::Result&lt;std::vector&lt;char&gt; &gt; hra::per::ReadAccessor::ReadBinary</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>ReadBinary</name>
+        <briefdescription>
+<para>Reads bytes from current positon to the end of the file into a vector, advancing the current position. Returns the actual number of bytes that were read. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A Result, containing either bytes that have been read or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="138" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1ReadAccessor_1a9eacd4f719ab8ecdc4dc312876f4946e" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>hra::core::Result&lt; std::vector&lt; char &gt; &gt;</type>
+        <definition>virtual hra::core::Result&lt;std::vector&lt;char&gt; &gt; hra::per::ReadAccessor::ReadBinary</definition>
+        <argsstring>(uint64_t n) noexcept=0</argsstring>
+        <name>ReadBinary</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Reads a number of bytes into a vector, advancing the current position. Returns the actual number of bytes that were read. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Result, containing either bytes that have been read or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="148" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1ReadAccessor_1a2ac9fb04e8514626e9f3daee029af894" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>hra::core::Result&lt; std::string &gt;</type>
+        <definition>virtual hra::core::Result&lt;std::string&gt; hra::per::ReadAccessor::ReadLine</definition>
+        <argsstring>(char const delim=&apos;\n&apos;) noexcept=0</argsstring>
+        <name>ReadLine</name>
+        <param>
+          <type>char const</type>
+          <declname>delim</declname>
+          <defval>&apos;\n&apos;</defval>
+        </param>
+        <briefdescription>
+<para>Reads a complete line into a sting, advancing the current position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">delim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The character that is used as delimiter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Result, containing either characters that have been read,including the delimiter or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="159" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1ReadAccessor_1a13b8ba2b46b1fb654cd50557a5a95de9" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>uint64_t</type>
+        <definition>virtual uint64_t hra::per::ReadAccessor::GetSize</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>GetSize</name>
+        <briefdescription>
+<para>Get the size of the file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Size of the file in bytes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="167" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1ReadAccessor_1a869329f01128026b1554de3eae32af18" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>uint64_t</type>
+        <definition>virtual uint64_t hra::per::ReadAccessor::GetPosition</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>GetPosition</name>
+        <briefdescription>
+<para>Returns the current position relative to the beginning of the file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current position in the file in bytes from the beginning. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="174" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1ReadAccessor_1ac20e87fbf7bcf1ac46da81791f74d8aa" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>virtual hra::core::Result&lt;void&gt; hra::per::ReadAccessor::SetPosition</definition>
+        <argsstring>(uint64_t position) noexcept=0</argsstring>
+        <name>SetPosition</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current position relative to the beginning of the file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current position in the file in bytes from the beginning. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Result, being either empty or containing one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="184" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1ReadAccessor_1a88c7c1e63a80fe47962738d502ee735e" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>hra::core::Result&lt; uint64_t &gt;</type>
+        <definition>virtual hra::core::Result&lt;uint64_t&gt; hra::per::ReadAccessor::MovePosition</definition>
+        <argsstring>(Origin origin, int64_t offset) noexcept=0</argsstring>
+        <name>MovePosition</name>
+        <param>
+          <type><ref refid="classhra_1_1per_1_1ReadAccessor_1a31deb08a775372552b215691be995b47" kindref="member">Origin</ref></type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current position in the file according to &apos;offset&apos; relatively to &apos;origin&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset in bytes relative to &apos;origin&apos;. Can be positive in case of kBeginning and kCurrent and negative in case of kCurrent and kEnd. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Starting point from which to move &apos;offset&apos; bytes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Result, containing either current position in the file in bytes from the beginning or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="196" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classhra_1_1per_1_1ReadAccessor_1aa54f20a7b062d31fdf706acd436ce82e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool hra::per::ReadAccessor::IsEof</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>IsEof</name>
+        <briefdescription>
+<para>Checks if the end of the file was reached during an operation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the end of the file was reached, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_accessor.h" line="204" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classhra_1_1per_1_1ReadAccessor" kindref="compound">ReadAccessor</ref> is used to read file data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>hra::per::ReadWriteAccessor</label>
+        <link refid="classhra_1_1per_1_1ReadWriteAccessor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>hra::per::ReadAccessor</label>
+        <link refid="classhra_1_1per_1_1ReadAccessor"/>
+      </node>
+    </inheritancegraph>
+    <location file="include/read_accessor.h" line="22" column="19" bodyfile="include/read_accessor.h" bodystart="22" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1a3857929f157ab042e61f0b83fc898655" prot="public" virt="pure-virtual"><scope>hra::per::ReadAccessor</scope><name>Get</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1a869329f01128026b1554de3eae32af18" prot="public" virt="pure-virtual"><scope>hra::per::ReadAccessor</scope><name>GetPosition</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1a13b8ba2b46b1fb654cd50557a5a95de9" prot="public" virt="pure-virtual"><scope>hra::per::ReadAccessor</scope><name>GetSize</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1aa54f20a7b062d31fdf706acd436ce82e" prot="public" virt="pure-virtual"><scope>hra::per::ReadAccessor</scope><name>IsEof</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1a88c7c1e63a80fe47962738d502ee735e" prot="public" virt="pure-virtual"><scope>hra::per::ReadAccessor</scope><name>MovePosition</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666c" prot="public" virt="non-virtual"><scope>hra::per::ReadAccessor</scope><name>OpenMode</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1a31deb08a775372552b215691be995b47" prot="public" virt="non-virtual"><scope>hra::per::ReadAccessor</scope><name>Origin</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1a0fdca65cc75dcc4fdb98cac92962a529" prot="public" virt="pure-virtual"><scope>hra::per::ReadAccessor</scope><name>Peek</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1a39d277ec4f016ab139d01fdcf792d6e3" prot="public" virt="pure-virtual"><scope>hra::per::ReadAccessor</scope><name>ReadBinary</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1a9eacd4f719ab8ecdc4dc312876f4946e" prot="public" virt="pure-virtual"><scope>hra::per::ReadAccessor</scope><name>ReadBinary</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1a2ac9fb04e8514626e9f3daee029af894" prot="public" virt="pure-virtual"><scope>hra::per::ReadAccessor</scope><name>ReadLine</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1a041ed9f43c18f05ff26b92d463bc867d" prot="public" virt="pure-virtual"><scope>hra::per::ReadAccessor</scope><name>ReadText</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1ad009c74c04831294c9e7c4684682d672" prot="public" virt="pure-virtual"><scope>hra::per::ReadAccessor</scope><name>ReadText</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1ac20e87fbf7bcf1ac46da81791f74d8aa" prot="public" virt="pure-virtual"><scope>hra::per::ReadAccessor</scope><name>SetPosition</name></member>
+      <member refid="classhra_1_1per_1_1ReadAccessor_1a6bd9a953b29c29af1c09617ffdfb8a54" prot="public" virt="virtual"><scope>hra::per::ReadAccessor</scope><name>~ReadAccessor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

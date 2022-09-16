@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="read__accessor_8h" kind="file" language="C++">
+    <compoundname>read_accessor.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="yes">core/result.h</includes>
+    <includes local="yes">core/string_view.h</includes>
+    <includedby refid="read__write__accessor_8h" local="yes">include/read_write_accessor.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>core/string_view.h</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="1">
+        <label>include/read_accessor.h</label>
+        <link refid="read__accessor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>core/result.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/read_write_accessor.h</label>
+        <link refid="read__write__accessor_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/file_storage.h</label>
+        <link refid="file__storage_8h_source"/>
+      </node>
+      <node id="1">
+        <label>include/read_accessor.h</label>
+        <link refid="read__accessor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classhra_1_1per_1_1ReadAccessor" prot="public">hra::per::ReadAccessor</innerclass>
+    <innernamespace refid="namespacehra">hra</innernamespace>
+    <innernamespace refid="namespacehra_1_1per">hra::per</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Horizon<sp/>Robotics,<sp/>Inc.<sp/>-<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Unauthorized<sp/>copying<sp/>of<sp/>this<sp/>file,<sp/>via<sp/>any<sp/>medium<sp/>is<sp/>strictly<sp/>prohibited</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Proprietary<sp/>and<sp/>confidential</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/result.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/string_view.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">hra<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">per<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classhra_1_1per_1_1ReadAccessor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classhra_1_1per_1_1ReadAccessor" kindref="compound">ReadAccessor</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a6bd9a953b29c29af1c09617ffdfb8a54" kindref="member">~ReadAccessor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classhra_1_1per_1_1ReadAccessor_1a31deb08a775372552b215691be995b47" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a31deb08a775372552b215691be995b47" kindref="member">Origin</ref><sp/>:<sp/>uint32_t<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a31deb08a775372552b215691be995b47ab4a651e47aec9e7a3db91ad75c9e3556" kindref="member">kBeginning</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a31deb08a775372552b215691be995b47aa1f14acc9c84a430477914441ad13a97" kindref="member">kCurrent</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a31deb08a775372552b215691be995b47a374bf9ba57a441a600d65b212cf9d13c" kindref="member">kEnd</ref><sp/>=<sp/>2</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666c" kindref="member">OpenMode</ref><sp/>:<sp/>uint32_t<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666ca22474a321748e3beef629bf60ee291c7" kindref="member">kAtTheBeginning</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666ca599815f27e6fd49f5df3dca143303fb2" kindref="member">kAtTheEnd</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666ca6393f5467404a20b7754c5032eb69bfd" kindref="member">kTruncate</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>2,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666caed5658e329d7469d2f08b7362619ffef" kindref="member">kAppend</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>3,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666ca3c8cbd89acf49a4b20aded693e13ae86" kindref="member">kText</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>4,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1aabb56495f2db04addf69743ad3ca666ca212f9f34e4e151a9ba569c71e1aace47" kindref="member">kBinary</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>5</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>hra::core::Result&lt;char&gt;<sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a0fdca65cc75dcc4fdb98cac92962a529" kindref="member">Peek</ref>()<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>virtual<sp/>hra::core::Result&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&gt;<sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a3857929f157ab042e61f0b83fc898655" kindref="member">Get</ref>()<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>virtual<sp/>hra::core::Result&lt;std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;<sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a041ed9f43c18f05ff26b92d463bc867d" kindref="member">ReadText</ref>()<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>virtual<sp/>hra::core::Result&lt;std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;<sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a041ed9f43c18f05ff26b92d463bc867d" kindref="member">ReadText</ref>(uint64_t<sp/>n)<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>virtual<sp/>hra::core::Result&lt;std::vector&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&gt;&gt;<sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a39d277ec4f016ab139d01fdcf792d6e3" kindref="member">ReadBinary</ref>()<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>virtual<sp/>hra::core::Result&lt;std::vector&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&gt;&gt;<sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a39d277ec4f016ab139d01fdcf792d6e3" kindref="member">ReadBinary</ref>(</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>n)<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>virtual<sp/>hra::core::Result&lt;std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;<sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a2ac9fb04e8514626e9f3daee029af894" kindref="member">ReadLine</ref>(</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>const<sp/>delim<sp/>=<sp/>&apos;\n&apos;)<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>virtual<sp/>uint64_t<sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a13b8ba2b46b1fb654cd50557a5a95de9" kindref="member">GetSize</ref>()<sp/>const<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>virtual<sp/>uint64_t<sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a869329f01128026b1554de3eae32af18" kindref="member">GetPosition</ref>()<sp/>const<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>virtual<sp/>hra::core::Result&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">&gt;<sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1ac20e87fbf7bcf1ac46da81791f74d8aa" kindref="member">SetPosition</ref>(uint64_t<sp/>position)<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/>virtual<sp/>hra::core::Result&lt;uint64_t&gt;<sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1a88c7c1e63a80fe47962738d502ee735e" kindref="member">MovePosition</ref>(<ref refid="classhra_1_1per_1_1ReadAccessor_1a31deb08a775372552b215691be995b47" kindref="member">Origin</ref><sp/>origin,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/>offset)<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classhra_1_1per_1_1ReadAccessor_1aa54f20a7b062d31fdf706acd436ce82e" kindref="member">IsEof</ref>()<sp/>const<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>per</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>hra</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/read_accessor.h"/>
+  </compounddef>
+</doxygen>

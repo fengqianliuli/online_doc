@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structhra_1_1per_1_1GeneralConfig" kind="struct" language="C++" prot="public">
+    <compoundname>hra::per::GeneralConfig</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhra_1_1per_1_1GeneralConfig_1a01d7b97d6f182b63cbd6ecac6a091f24" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hra::per::GeneralConfig::minimum_sustained_size</definition>
+        <argsstring></argsstring>
+        <name>minimum_sustained_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="30" column="7" bodyfile="src/include/common.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhra_1_1per_1_1GeneralConfig_1a85cd059ba73201d1de35753ba8b86b5c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hra::per::GeneralConfig::maximum_allowed_size</definition>
+        <argsstring></argsstring>
+        <name>maximum_allowed_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="31" column="7" bodyfile="src/include/common.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhra_1_1per_1_1GeneralConfig_1adf5504aa9628fcbfaf9e9837e7be29e9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hra::per::GeneralConfig::collection_update_strategy</definition>
+        <argsstring></argsstring>
+        <name>collection_update_strategy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="32" column="7" bodyfile="src/include/common.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhra_1_1per_1_1GeneralConfig_1a3832c91ef93bdb0be4ab56491e4fd6b0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hra::per::GeneralConfig::element_update_strategy</definition>
+        <argsstring></argsstring>
+        <name>element_update_strategy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="33" column="7" bodyfile="src/include/common.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhra_1_1per_1_1GeneralConfig_1a337153d846303fba439eba8935931b73" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hra::per::GeneralConfig::redundancy_granularity</definition>
+        <argsstring></argsstring>
+        <name>redundancy_granularity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="34" column="7" bodyfile="src/include/common.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhra_1_1per_1_1GeneralConfig_1a911c9940c71c41911376ffa8888a461a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hra::per::GeneralConfig::redundancy_n</definition>
+        <argsstring></argsstring>
+        <name>redundancy_n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="35" column="7" bodyfile="src/include/common.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhra_1_1per_1_1GeneralConfig_1af27e844076b745803c6aa4ee93ceaa8b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hra::per::GeneralConfig::redundancy_m</definition>
+        <argsstring></argsstring>
+        <name>redundancy_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="36" column="7" bodyfile="src/include/common.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhra_1_1per_1_1GeneralConfig_1aa28cc57c63e5f8115af24e45bebe3044" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hra::per::GeneralConfig::need_encryption</definition>
+        <argsstring></argsstring>
+        <name>need_encryption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="37" column="8" bodyfile="src/include/common.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structhra_1_1per_1_1GeneralConfig_1aa25f659c764b5f6b0d98500b14dc1c91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void hra::per::GeneralConfig::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="39" column="8" bodyfile="src/include/common.h" bodystart="39" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/common.h" line="29" column="20" bodyfile="src/include/common.h" bodystart="29" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structhra_1_1per_1_1GeneralConfig_1adf5504aa9628fcbfaf9e9837e7be29e9" prot="public" virt="non-virtual"><scope>hra::per::GeneralConfig</scope><name>collection_update_strategy</name></member>
+      <member refid="structhra_1_1per_1_1GeneralConfig_1a3832c91ef93bdb0be4ab56491e4fd6b0" prot="public" virt="non-virtual"><scope>hra::per::GeneralConfig</scope><name>element_update_strategy</name></member>
+      <member refid="structhra_1_1per_1_1GeneralConfig_1a85cd059ba73201d1de35753ba8b86b5c" prot="public" virt="non-virtual"><scope>hra::per::GeneralConfig</scope><name>maximum_allowed_size</name></member>
+      <member refid="structhra_1_1per_1_1GeneralConfig_1a01d7b97d6f182b63cbd6ecac6a091f24" prot="public" virt="non-virtual"><scope>hra::per::GeneralConfig</scope><name>minimum_sustained_size</name></member>
+      <member refid="structhra_1_1per_1_1GeneralConfig_1aa28cc57c63e5f8115af24e45bebe3044" prot="public" virt="non-virtual"><scope>hra::per::GeneralConfig</scope><name>need_encryption</name></member>
+      <member refid="structhra_1_1per_1_1GeneralConfig_1a337153d846303fba439eba8935931b73" prot="public" virt="non-virtual"><scope>hra::per::GeneralConfig</scope><name>redundancy_granularity</name></member>
+      <member refid="structhra_1_1per_1_1GeneralConfig_1af27e844076b745803c6aa4ee93ceaa8b" prot="public" virt="non-virtual"><scope>hra::per::GeneralConfig</scope><name>redundancy_m</name></member>
+      <member refid="structhra_1_1per_1_1GeneralConfig_1a911c9940c71c41911376ffa8888a461a" prot="public" virt="non-virtual"><scope>hra::per::GeneralConfig</scope><name>redundancy_n</name></member>
+      <member refid="structhra_1_1per_1_1GeneralConfig_1aa25f659c764b5f6b0d98500b14dc1c91" prot="public" virt="non-virtual"><scope>hra::per::GeneralConfig</scope><name>serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

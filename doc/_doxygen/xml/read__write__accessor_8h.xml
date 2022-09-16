@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="read__write__accessor_8h" kind="file" language="C++">
+    <compoundname>read_write_accessor.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="read__accessor_8h" local="yes">read_accessor.h</includes>
+    <includedby refid="file__storage_8h" local="yes">include/file_storage.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>core/string_view.h</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="1">
+        <label>include/read_write_accessor.h</label>
+        <link refid="read__write__accessor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>read_accessor.h</label>
+        <link refid="read__accessor_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>core/result.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/read_write_accessor.h</label>
+        <link refid="read__write__accessor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/file_storage.h</label>
+        <link refid="file__storage_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classhra_1_1per_1_1ReadWriteAccessor" prot="public">hra::per::ReadWriteAccessor</innerclass>
+    <innernamespace refid="namespacehra">hra</innernamespace>
+    <innernamespace refid="namespacehra_1_1per">hra::per</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Horizon<sp/>Robotics,<sp/>Inc.<sp/>-<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Unauthorized<sp/>copying<sp/>of<sp/>this<sp/>file,<sp/>via<sp/>any<sp/>medium<sp/>is<sp/>strictly<sp/>prohibited</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Proprietary<sp/>and<sp/>confidential</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;read_accessor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">hra<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">per<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classhra_1_1per_1_1ReadWriteAccessor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classhra_1_1per_1_1ReadWriteAccessor" kindref="compound">ReadWriteAccessor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classhra_1_1per_1_1ReadAccessor" kindref="compound">ReadAccessor</ref><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><ref refid="classhra_1_1per_1_1ReadWriteAccessor_1aa2bc01e8c2825f5fea0697d819b97bb7" kindref="member">~ReadWriteAccessor</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>hra::core::Result&lt;void&gt;<sp/><ref refid="classhra_1_1per_1_1ReadWriteAccessor_1ac89d87498f28cad2f911913a54ddfd8c" kindref="member">SyncToFile</ref>()<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>hra::core::Result&lt;void&gt;<sp/><ref refid="classhra_1_1per_1_1ReadWriteAccessor_1ab01fb4021f25f9d54e1b48b195c7d075" kindref="member">WriteText</ref>(</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>hra::core::StringView<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>hra::core::Result&lt;void&gt;<sp/><ref refid="classhra_1_1per_1_1ReadWriteAccessor_1a84271c9c5d6a3d3fae3939acfcbc1aac" kindref="member">WriteBinary</ref>(</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;char&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;bytes)<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classhra_1_1per_1_1ReadWriteAccessor" kindref="compound">ReadWriteAccessor</ref><sp/>&amp;<ref refid="classhra_1_1per_1_1ReadWriteAccessor_1a8fd90eb186a765b20a2cf9c575fd8a7a" kindref="member">operator&lt;&lt;</ref>(</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>hra::core::StringView<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classhra_1_1per_1_1ReadWriteAccessor" kindref="compound">ReadWriteAccessor</ref><sp/>&amp;<ref refid="classhra_1_1per_1_1ReadWriteAccessor_1a8fd90eb186a765b20a2cf9c575fd8a7a" kindref="member">operator&lt;&lt;</ref>(</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::function&lt;<ref refid="classhra_1_1per_1_1ReadWriteAccessor" kindref="compound">ReadWriteAccessor</ref><sp/>&amp;(<ref refid="classhra_1_1per_1_1ReadWriteAccessor" kindref="compound">ReadWriteAccessor</ref><sp/>&amp;)&gt;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;</highlight><highlight class="keyword">function</highlight><highlight class="normal">)<sp/>noexcept<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><ref refid="classhra_1_1per_1_1ReadWriteAccessor" kindref="compound">ReadWriteAccessor</ref><sp/>&amp;Endl(<ref refid="classhra_1_1per_1_1ReadWriteAccessor" kindref="compound">ReadWriteAccessor</ref><sp/>&amp;accessor)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><ref refid="classhra_1_1per_1_1ReadWriteAccessor" kindref="compound">ReadWriteAccessor</ref><sp/>&amp;Flush(<ref refid="classhra_1_1per_1_1ReadWriteAccessor" kindref="compound">ReadWriteAccessor</ref><sp/>&amp;accessor)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>per</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>hra</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/read_write_accessor.h"/>
+  </compounddef>
+</doxygen>

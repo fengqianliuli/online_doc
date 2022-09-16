@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classhra_1_1per_1_1ManifestInstance" kind="class" language="C++" prot="public">
+    <compoundname>hra::per::ManifestInstance</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhra_1_1per_1_1ManifestInstance_1a592009e1595ff71eacc3e0153bc3a9f4" prot="private" static="no" mutable="no">
+        <type><ref refid="structhra_1_1per_1_1Manifest" kindref="compound">Manifest</ref></type>
+        <definition>Manifest hra::per::ManifestInstance::manifest_data_</definition>
+        <argsstring></argsstring>
+        <name>manifest_data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="91" column="12" bodyfile="src/include/common.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classhra_1_1per_1_1ManifestInstance_1ab59a2c5fdbbddaa00c5d02e0d75a3660" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classhra_1_1per_1_1ManifestInstance" kindref="compound">ManifestInstance</ref> &amp;</type>
+        <definition>static const ManifestInstance&amp; hra::per::ManifestInstance::GetManifestInstance</definition>
+        <argsstring>(const std::string &amp;manifest_path)</argsstring>
+        <name>GetManifestInstance</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>manifest_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="76" column="33" bodyfile="src/include/common.h" bodystart="76" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhra_1_1per_1_1ManifestInstance_1aa39cbe6be8a165ae6dc7bf0ae7619622" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structhra_1_1per_1_1Manifest" kindref="compound">Manifest</ref> &amp;</type>
+        <definition>const Manifest&amp; hra::per::ManifestInstance::GetManifestData</definition>
+        <argsstring>() const</argsstring>
+        <name>GetManifestData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="82" column="18" bodyfile="src/include/common.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classhra_1_1per_1_1ManifestInstance_1a739dca2eb9ab5f09f68603a436f5837d" prot="private" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hra::per::ManifestInstance::ManifestInstance</definition>
+        <argsstring>(const std::string &amp;manifest_path)</argsstring>
+        <name>ManifestInstance</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>manifest_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="85" column="12" bodyfile="src/include/common.h" bodystart="85" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/common.h" line="74" column="23" bodyfile="src/include/common.h" bodystart="74" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classhra_1_1per_1_1ManifestInstance_1aa39cbe6be8a165ae6dc7bf0ae7619622" prot="public" virt="non-virtual"><scope>hra::per::ManifestInstance</scope><name>GetManifestData</name></member>
+      <member refid="classhra_1_1per_1_1ManifestInstance_1ab59a2c5fdbbddaa00c5d02e0d75a3660" prot="public" virt="non-virtual"><scope>hra::per::ManifestInstance</scope><name>GetManifestInstance</name></member>
+      <member refid="classhra_1_1per_1_1ManifestInstance_1a592009e1595ff71eacc3e0153bc3a9f4" prot="private" virt="non-virtual"><scope>hra::per::ManifestInstance</scope><name>manifest_data_</name></member>
+      <member refid="classhra_1_1per_1_1ManifestInstance_1a739dca2eb9ab5f09f68603a436f5837d" prot="private" virt="non-virtual"><scope>hra::per::ManifestInstance</scope><name>ManifestInstance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

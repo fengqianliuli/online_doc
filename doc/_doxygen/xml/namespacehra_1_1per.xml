@@ -1,0 +1,836 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacehra_1_1per" kind="namespace" language="C++">
+    <compoundname>hra::per</compoundname>
+    <innerclass refid="classhra_1_1per_1_1FileStorage" prot="public">hra::per::FileStorage</innerclass>
+    <innerclass refid="structhra_1_1per_1_1GeneralConfig" prot="public">hra::per::GeneralConfig</innerclass>
+    <innerclass refid="classhra_1_1per_1_1KeyValueStorage" prot="public">hra::per::KeyValueStorage</innerclass>
+    <innerclass refid="structhra_1_1per_1_1Manifest" prot="public">hra::per::Manifest</innerclass>
+    <innerclass refid="classhra_1_1per_1_1ManifestInstance" prot="public">hra::per::ManifestInstance</innerclass>
+    <innerclass refid="classhra_1_1per_1_1ReadAccessor" prot="public">hra::per::ReadAccessor</innerclass>
+    <innerclass refid="classhra_1_1per_1_1ReadWriteAccessor" prot="public">hra::per::ReadWriteAccessor</innerclass>
+    <innerclass refid="classhra_1_1per_1_1ResultErrorDomain" prot="public">hra::per::ResultErrorDomain</innerclass>
+    <innerclass refid="structhra_1_1per_1_1Storage" prot="public">hra::per::Storage</innerclass>
+    <innernamespace refid="namespacehra_1_1per_1_1crc__util">hra::per::crc_util</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2" prot="public" static="no" strong="yes">
+        <type>hra::core::ErrorDomain::CodeType</type>
+        <name>PerErrc</name>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2ac0b9949c638244c9a32dbf8a561a85c9" prot="public">
+          <name>kStorageNotFound</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2af148a48e204999441f858d9931d89065" prot="public">
+          <name>kKeyNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2a19c50008d00afcc8c79ba20255ed7a8d" prot="public">
+          <name>kIllegalWriteAccess</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2aaf10e4c6ea53d50dc5d164963984cfb1" prot="public">
+          <name>kPhysicalStorageFailure</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2a407c1a7c08e5f0f047ddcbd4d14c7f50" prot="public">
+          <name>kIntegrityCorrupted</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2ad8f434f2bfdc5abac58b9c2b64d69e9b" prot="public">
+          <name>kValidationFailed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2a59acc4f6a3b1316adef359215c99a075" prot="public">
+          <name>kEncryptionFailed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2ad6011675a26718c995a3691070325862" prot="public">
+          <name>kDataTypeMismatch</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2ad52bb54350306dfcc162119af14685cf" prot="public">
+          <name>kInitValueNotAvailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2a05e863fbeafa6734a9277fb18ef9537a" prot="public">
+          <name>kResourceBusy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2a2cd3b32c6e55cc261e7e00c7ad171942" prot="public">
+          <name>kOutOfStorageSpace</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2a3a62d594c4725a38e29490fa75b0a0be" prot="public">
+          <name>kFileNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2abbd5acb78b1f1d9828c53a05f256a955" prot="public">
+          <name>kNotInitialized</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2a9cf56dbb2ad0e8a3d6ef45f0d90b556a" prot="public">
+          <name>kInvalidPosition</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2ad4cc7e189455449f6b54d96e28252eee" prot="public">
+          <name>kIsEof</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2a94525476d1eeb471ffb378c38f54e844" prot="public">
+          <name>kInvalidOpenMode</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="per__error__domain_8h_1aff8ea5a4c2413c1bd3d4a59e262ff6b2acfdef43a3c5eaa99825b20bba5336411" prot="public">
+          <name>kInvalidSize</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/per_error_domain.h" line="22" column="19" bodyfile="include/per_error_domain.h" bodystart="22" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="enum" id="persistency_8h_1acb204f2ae45375b0ac1630ceefceb5ac" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>RecoveryReportKind</name>
+        <enumvalue id="persistency_8h_1acb204f2ae45375b0ac1630ceefceb5acaff3502c9ddb7dcced43ab59f42fb9e14" prot="public">
+          <name>kKeyValueStorageRecoveryFailed</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> was corrupted, an insufficient number of valid copies existed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="persistency_8h_1acb204f2ae45375b0ac1630ceefceb5aca0d259c97dcb788bebe346ce78f9ee9cd" prot="public">
+          <name>kKeyValueStorageRecovered</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> was corrupted, but a sufficient number of valid copies existed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="persistency_8h_1acb204f2ae45375b0ac1630ceefceb5aca19382e00d726aef2ec828b532f32ad81" prot="public">
+          <name>kKeyRecoveryFailed</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A set of key-value pairs was corrupted, an insufficient number of valid copies existed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="persistency_8h_1acb204f2ae45375b0ac1630ceefceb5acaee76211a6471b2789cf5978cfc7b4da8" prot="public">
+          <name>kKeyRecovered</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A set of key-value pairs was corrupted, but a sufficient number of valid copies existed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="persistency_8h_1acb204f2ae45375b0ac1630ceefceb5acae1472c41271424fc9e20a2f17ab8e875" prot="public">
+          <name>kFileStorageRecoveryFailed</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A File <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> was corrupted, an insufficient number of valid copies existed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="persistency_8h_1acb204f2ae45375b0ac1630ceefceb5aca369d98533f0529dd4f9ade124e5b5a7c" prot="public">
+          <name>kFileStorageRecovered</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A File <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> was corrupted, but a sufficient number of valid copies existed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="persistency_8h_1acb204f2ae45375b0ac1630ceefceb5aca14527fc3bdc1d561ee81457ace5a0a9f" prot="public">
+          <name>kFileRecoveryFailed</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A set of files was corrupted, an insufficient number of valid copies existed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="persistency_8h_1acb204f2ae45375b0ac1630ceefceb5aca6b126e87aea86285a29d0de2bae024bf" prot="public">
+          <name>kFileRecovered</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A set of files was corrupted, but a sufficient number of valid copies existed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Specification of the reported recovery actions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/persistency.h" line="23" column="30" bodyfile="include/persistency.h" bodystart="23" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="enum" id="persistency_8h_1a8a0fa956f8e34b354296ca9f21be85f2" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>CollectionUpdateStrategy</name>
+        <enumvalue id="persistency_8h_1a8a0fa956f8e34b354296ca9f21be85f2a62463ac1812d63cb98811c2136851197" prot="public">
+          <name>kKeepExisting</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Keep the existing values on the level of the respective collection. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="persistency_8h_1a8a0fa956f8e34b354296ca9f21be85f2aa075d0261593f6a884f416df38cb9696" prot="public">
+          <name>kDelete</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Delete all values on the level of the respective collection. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Provides possible values for the update strategy on storage level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/persistency.h" line="54" column="36" bodyfile="include/persistency.h" bodystart="54" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="persistency_8h_1ae7ff7cdaa6ac5cabbff312697d9062ff" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>ElementUpdateStrategy</name>
+        <enumvalue id="persistency_8h_1ae7ff7cdaa6ac5cabbff312697d9062ffabfd4483cecc9ffd36f88de2c9f53b8dc" prot="public">
+          <name>kOverwrite</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Overwrite the respective data item. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="persistency_8h_1ae7ff7cdaa6ac5cabbff312697d9062ffa62463ac1812d63cb98811c2136851197" prot="public">
+          <name>kKeepExisting</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Keep the existing value of the respective data item. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="persistency_8h_1ae7ff7cdaa6ac5cabbff312697d9062ffaa075d0261593f6a884f416df38cb9696" prot="public">
+          <name>kDelete</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Delete the value of the respective data item. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="persistency_8h_1ae7ff7cdaa6ac5cabbff312697d9062ffa35c3ace1970663a16e5c65baa5941b13" prot="public">
+          <name>kNone</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Use update strategy on collection level. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Provides possible values for the update strategy on element level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/persistency.h" line="65" column="33" bodyfile="include/persistency.h" bodystart="65" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="enum" id="common_8h_1a56c03e5584c3a103f1ee033bd978a941" prot="public" static="no" strong="yes">
+        <type>std::uint8_t</type>
+        <name>PersistencyOperateState</name>
+        <enumvalue id="common_8h_1a56c03e5584c3a103f1ee033bd978a941a21bc87e2c97efc0b4b774372fb8e8983" prot="public">
+          <name>kCanOperate</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="common_8h_1a56c03e5584c3a103f1ee033bd978a941ace75ba099a7127c5b2afe7eadae4e1e7" prot="public">
+          <name>kUpdating</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="common_8h_1a56c03e5584c3a103f1ee033bd978a941ac835ad670e259bda683ba8370a5f6f8d" prot="public">
+          <name>kReseting</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="95" column="35" bodyfile="src/include/common.h" bodystart="95" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="per__error__domain_8h_1a36cf0119668fd312b2e62cfee4a07897" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr static uint64_t</type>
+        <definition>constexpr static uint64_t hra::per::per_error_domain</definition>
+        <argsstring></argsstring>
+        <name>per_error_domain</name>
+        <initializer>= 0x1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/per_error_domain.h" line="19" column="27" bodyfile="include/per_error_domain.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1afc48e8818a929d9c6d2803a6a943f983" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto hra::per::g_manifest_path</definition>
+        <argsstring></argsstring>
+        <name>g_manifest_path</name>
+        <initializer>{&quot;./Manifest.json&quot;}</initializer>
+        <briefdescription>
+<para>manifest path </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="23" column="16" bodyfile="src/include/common.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1a54ccc1826fac4d8c4a8ecc33c6651696" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto hra::per::g_default_file_content</definition>
+        <argsstring></argsstring>
+        <name>g_default_file_content</name>
+        <initializer>{&quot;default content&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="24" column="16" bodyfile="src/include/common.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1add767de5a88058d8afb3ca09074bda80" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto hra::per::g_default_path</definition>
+        <argsstring></argsstring>
+        <name>g_default_path</name>
+        <initializer>{&quot;/default/&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="25" column="16" bodyfile="src/include/common.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1a83b949c4042a40951a6dd3addfba45ea" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto hra::per::g_bak_path</definition>
+        <argsstring></argsstring>
+        <name>g_bak_path</name>
+        <initializer>{&quot;/bak/&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/common.h" line="26" column="16" bodyfile="src/include/common.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="file__storage_8h_1a3a1f0e88810aed3c7d72db1f3df31ae9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>hra::core::Result&lt; std::shared_ptr&lt; <ref refid="classhra_1_1per_1_1FileStorage" kindref="compound">FileStorage</ref> &gt; &gt;</type>
+        <definition>hra::core::Result&lt;std::shared_ptr&lt;FileStorage&gt; &gt; hra::per::OpenFileStorage</definition>
+        <argsstring>(const hra::core::InstanceSpecifier &amp;fs) noexcept</argsstring>
+        <name>OpenFileStorage</name>
+        <param>
+          <type>const hra::core::InstanceSpecifier &amp;</type>
+          <declname>fs</declname>
+        </param>
+        <briefdescription>
+<para>Opens a file storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shortName path of a PortPrototype typed by a PersistencyFileProxyInterface. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Result, containing a SharedHandle, or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/file_storage.h" line="175" column="19" declfile="include/file_storage.h" declline="175" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="file__storage_8h_1a7e19b6ee99f15a6e3fea345483ed4333" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>hra::core::Result&lt;void&gt; hra::per::RecoverAllFiles</definition>
+        <argsstring>(const hra::core::InstanceSpecifier &amp;fs) noexcept</argsstring>
+        <name>RecoverAllFiles</name>
+        <param>
+          <type>const hra::core::InstanceSpecifier &amp;</type>
+          <declname>fs</declname>
+        </param>
+        <briefdescription>
+<para>Recover the whole file storage, including all files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shortName path of a PortPrototype typed by a PersistencyFileProxyInterface. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Result, or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/file_storage.h" line="185" column="19" declfile="include/file_storage.h" declline="185" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="file__storage_8h_1ab77a4403477ca5fb06d93f643e22e71a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>hra::core::Result&lt;void&gt; hra::per::ResetAllFiles</definition>
+        <argsstring>(const hra::core::InstanceSpecifier &amp;fs) noexcept</argsstring>
+        <name>ResetAllFiles</name>
+        <param>
+          <type>const hra::core::InstanceSpecifier &amp;</type>
+          <declname>fs</declname>
+        </param>
+        <briefdescription>
+<para>Reset the whole file storage, including all files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shortName path of a PortPrototype typed by a PersistencyFileProxyInterface. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Result, or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/file_storage.h" line="195" column="19" declfile="include/file_storage.h" declline="195" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="file__storage_8h_1a36a2fb97e078d05cd127979f72ba3ec2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>hra::core::Result&lt; uint64_t &gt;</type>
+        <definition>hra::core::Result&lt;uint64_t&gt; hra::per::GetCurrentFileStorageSize</definition>
+        <argsstring>(const hra::core::InstanceSpecifier &amp;fs) noexcept</argsstring>
+        <name>GetCurrentFileStorageSize</name>
+        <param>
+          <type>const hra::core::InstanceSpecifier &amp;</type>
+          <declname>fs</declname>
+        </param>
+        <briefdescription>
+<para>Returns the space in bytes currently occupied by a File <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shortName path of a PortPrototype typed by a PersistencyFileProxyInterface. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Result, containing the occupied space in bytes, or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/file_storage.h" line="206" column="19" declfile="include/file_storage.h" declline="206" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="key__value__storage_8h_1adf2c02726e86b57d2a7bbd023fe4a6e5" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>hra::core::Result&lt; std::shared_ptr&lt; <ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref> &gt; &gt;</type>
+        <definition>hra::core::Result&lt;std::shared_ptr&lt;KeyValueStorage&gt; &gt; hra::per::OpenKeyValueStorage</definition>
+        <argsstring>(const hra::core::InstanceSpecifier &amp;kvs) noexcept</argsstring>
+        <name>OpenKeyValueStorage</name>
+        <param>
+          <type>const hra::core::InstanceSpecifier &amp;</type>
+          <declname>kvs</declname>
+        </param>
+        <briefdescription>
+<para>Opens a Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">kvs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>hra::core::Result&lt;std::shared_ptr&lt;KeyValueStorage&gt;&gt;</para>
+</simplesect>
+OpenKeyValueStorage will fail with kResourceBusy when the Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> is currently being modified by a call from another thread to UpdatePersistency, ResetPersistency, Recover <ref refid="classhra_1_1per_1_1KeyValueStorage" kindref="compound">KeyValueStorage</ref>, or ResetKeyValueStorage. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="198" column="19" declfile="include/key_value_storage.h" declline="198" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="key__value__storage_8h_1aef4c97a073a75f0d48e69e6eb844c2bd" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>hra::core::Result&lt;void&gt; hra::per::RecoverKeyValueStorage</definition>
+        <argsstring>(const hra::core::InstanceSpecifier &amp;kvs) noexcept</argsstring>
+        <name>RecoverKeyValueStorage</name>
+        <param>
+          <type>const hra::core::InstanceSpecifier &amp;</type>
+          <declname>kvs</declname>
+        </param>
+        <briefdescription>
+<para>Recovers a Key-ValueStorage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">kvs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>hra::core::Result&lt;void&gt;</para>
+</simplesect>
+RecoverKeyValueStorage allows to recover a key-value storage when the redundancy checks fail. It will fail with kResourceBusy when the Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> is currently open, or when it is modified by a call from another thread to UpdatePersistency, ResetPersistency, RecoverKey ValueStorage, or ResetKeyValueStorage. This method does a best-effort recovery of all keys. After recovery, keys might show outdated or initial value, or might be lost. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="213" column="19" declfile="include/key_value_storage.h" declline="213" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="key__value__storage_8h_1a8be45e72ab8ada334b2dbd300d219e43" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>hra::core::Result&lt;void&gt; hra::per::ResetKeyValueStorage</definition>
+        <argsstring>(const hra::core::InstanceSpecifier &amp;kvs) noexcept</argsstring>
+        <name>ResetKeyValueStorage</name>
+        <param>
+          <type>const hra::core::InstanceSpecifier &amp;</type>
+          <declname>kvs</declname>
+        </param>
+        <briefdescription>
+<para>Resets a Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> to the initial state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">kvs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>hra::core::Result&lt;void&gt;</para>
+</simplesect>
+ResetKeyValueStorage allows to reset a Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> to the initial state, containing only keys which were deployed from the manifest, with their initial values. It will fail with kResourceBusy when the Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> is currently open, or when it is modified by a call from another thread to UpdatePersistency, ResetPersistency, RecoverKey ValueStorage, or ResetKeyValueStorage. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="228" column="19" declfile="include/key_value_storage.h" declline="228" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="key__value__storage_8h_1a2fa10fd413a3cac59f941146718cbfe6" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>hra::core::Result&lt; uint64_t &gt;</type>
+        <definition>hra::core::Result&lt;uint64_t&gt; hra::per::GetCurrentKeyValueStorageSize</definition>
+        <argsstring>(const hra::core::InstanceSpecifier &amp;kvs) noexcept</argsstring>
+        <name>GetCurrentKeyValueStorageSize</name>
+        <param>
+          <type>const hra::core::InstanceSpecifier &amp;</type>
+          <declname>kvs</declname>
+        </param>
+        <briefdescription>
+<para>Returns the space in bytes currently occupied by a Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">kvs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>hra::core::Result&lt;uint64_t&gt;</para>
+</simplesect>
+The returned size includes all meta data and the space used for redundancy and backups. The returned size is only accurate if no other operation on the Key-Value <ref refid="structhra_1_1per_1_1Storage" kindref="compound">Storage</ref> takes place at the same time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/key_value_storage.h" line="240" column="19" declfile="include/key_value_storage.h" declline="240" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="per__error__domain_8h_1a2a7dcb0b53f95363f3e5458168698b15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>hra::core::Result&lt; T &gt;</type>
+        <definition>hra::core::Result&lt;T&gt; hra::per::MakeResultError</definition>
+        <argsstring>(PerErrc per_error)</argsstring>
+        <name>MakeResultError</name>
+        <param>
+          <type>PerErrc</type>
+          <declname>per_error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/per_error_domain.h" line="94" column="19" bodyfile="include/per_error_domain.h" bodystart="94" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="persistency_8h_1afb5f891bf266496584703eb5ef9b5058" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>hra::core::Result&lt;void&gt; hra::per::UpdatePersistency</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>UpdatePersistency</name>
+        <briefdescription>
+<para>Update file storage and key value storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A Result, or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/persistency.h" line="81" column="19" declfile="include/persistency.h" declline="81" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="persistency_8h_1a9c869d22b2b0fc94c2deac9c05451dc2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>hra::core::Result&lt; void &gt;</type>
+        <definition>hra::core::Result&lt;void&gt; hra::per::ResetPersistency</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ResetPersistency</name>
+        <briefdescription>
+<para>Reset file storage and key value storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A Result, or one of the errors defined for Persistency in PerErrc. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/persistency.h" line="88" column="19" declfile="include/persistency.h" declline="88" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="persistency_8h_1af4a526ad71516621bbb8704ccb6ae5e0" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hra::per::RegisterApplicationDataUpdateCallback</definition>
+        <argsstring>(std::function&lt; void(const hra::core::InstanceSpecifier &amp;storage, const std::string &amp;version)&gt; data_update_callback) noexcept</argsstring>
+        <name>RegisterApplicationDataUpdateCallback</name>
+        <param>
+          <type>std::function&lt; void(const hra::core::InstanceSpecifier &amp;storage, const std::string &amp;version)&gt;</type>
+          <declname>data_update_callback</declname>
+        </param>
+        <briefdescription>
+<para>Operate a file storage or a key value storage when updating. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data_update_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation to be executed on a file storage or a key value storage. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/persistency.h" line="96" column="6" declfile="include/persistency.h" declline="96" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="persistency_8h_1ac514d298025bbb1d90a5f81890770d4d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hra::per::RegisterRecoveryReportCallback</definition>
+        <argsstring>(std::function&lt; void(const hra::core::InstanceSpecifier &amp;storage, hra::per::RecoveryReportKind recovery_report_kind, std::vector&lt; std::string &gt; &amp;reported_elements, std::vector&lt; uint8_t &gt; &amp;reportedi_instances)&gt; recovery_report_callback) noexcept</argsstring>
+        <name>RegisterRecoveryReportCallback</name>
+        <param>
+          <type>std::function&lt; void(const hra::core::InstanceSpecifier &amp;storage, hra::per::RecoveryReportKind recovery_report_kind, std::vector&lt; std::string &gt; &amp;reported_elements, std::vector&lt; uint8_t &gt; &amp;reportedi_instances)&gt;</type>
+          <declname>recovery_report_callback</declname>
+        </param>
+        <briefdescription>
+<para>Operate a file storage or a key value storage when recovering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">recovery_report_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation to be executed on a file storage or a key value storage. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/persistency.h" line="107" column="6" declfile="include/persistency.h" declline="107" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="read__write__accessor_8h_1a9b7f75f4df0cbf071a0f51adaa8ce51f" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classhra_1_1per_1_1ReadWriteAccessor" kindref="compound">ReadWriteAccessor</ref> &amp;</type>
+        <definition>ReadWriteAccessor&amp; hra::per::Endl</definition>
+        <argsstring>(ReadWriteAccessor &amp;accessor) noexcept</argsstring>
+        <name>Endl</name>
+        <param>
+          <type><ref refid="classhra_1_1per_1_1ReadWriteAccessor" kindref="compound">ReadWriteAccessor</ref> &amp;</type>
+          <declname>accessor</declname>
+        </param>
+        <briefdescription>
+<para>Writes a newline to the file and calls flush(). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">accessor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The WriteAccessor object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The WriteAccessor object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_write_accessor.h" line="85" column="19" declfile="include/read_write_accessor.h" declline="85" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="read__write__accessor_8h_1aa627699171d262220a9f6835b743b9df" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classhra_1_1per_1_1ReadWriteAccessor" kindref="compound">ReadWriteAccessor</ref> &amp;</type>
+        <definition>ReadWriteAccessor&amp; hra::per::Flush</definition>
+        <argsstring>(ReadWriteAccessor &amp;accessor) noexcept</argsstring>
+        <name>Flush</name>
+        <param>
+          <type><ref refid="classhra_1_1per_1_1ReadWriteAccessor" kindref="compound">ReadWriteAccessor</ref> &amp;</type>
+          <declname>accessor</declname>
+        </param>
+        <briefdescription>
+<para>Calls flush() on the file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">accessor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The WriteAccessor object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The WriteAccessor object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/read_write_accessor.h" line="93" column="19" declfile="include/read_write_accessor.h" declline="93" declcolumn="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/file_storage.h" line="17" column="13"/>
+  </compounddef>
+</doxygen>
