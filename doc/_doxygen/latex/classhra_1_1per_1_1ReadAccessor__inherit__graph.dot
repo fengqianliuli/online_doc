@@ -1,9 +1,0 @@
-digraph "hra::per::ReadAccessor"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="hra::per::ReadAccessor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="ReadAccessor is used to read file data."];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="hra::per::ReadWriteAccessor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classhra_1_1per_1_1ReadWriteAccessor.html",tooltip="ReadWriteAccessor is used to read and write file data."];
-}
